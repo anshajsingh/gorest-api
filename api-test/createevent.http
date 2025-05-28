@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByaW5jeUBnbWFpbC5jb20iLCJleHAiOjE3NDg0MzUwMzMsImlkIjoyfQ.YjSTwzGjW8ITFcvvWVNQppqpY3U3WUdBI3A8e0PJnCE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByaW5jeUBnbWFpbC5jb20iLCJleHAiOjE3NDg0NDMyNjYsImlkIjoyfQ.bQuvVcvVh7b7_RvksN1xG-1y3CeIwjfLiENg9Y5qzog
 
 
 {
-  "name": "Test Event ANsha vaishnavi 143324",
+  "name": "Test Event ANsha vaishnavi low",
   "description": "This is a test event qee",
   "date": "2023-10-01T10:00:00Z",
   "location": "Test Location"
