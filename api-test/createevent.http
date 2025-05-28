@@ -1,5 +1,7 @@
 POST http://localhost:8080/events
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhdWRlMTIzNDU2N0BnbWFpbC5jb20iLCJleHAiOjE3NDg0MzMzNTYsImlkIjoxfQ.SojvYkJ0n5svaHFeO7J8zwKB6IcErM3gtW-C5IPz7u8
+
 
 {
   "name": "Test Event ANsha vaishnavi 143324",
