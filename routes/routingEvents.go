@@ -28,7 +28,7 @@ func createEvents(context *gin.Context) {
 		return
 	}
 
-	err := utils.VerfiyToken(token) // verifying the token
+	userIdfromToken, err := utils.VerfiyToken(token) // verifying the token
 	if err != nil {
 		context.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid or expired token"})
 		return
@@ -39,8 +39,8 @@ func createEvents(context *gin.Context) {
 		context.JSON(http.StatusBadRequest, gin.H{"error": "coundn't parese data"})
 		return
 	}
-	event.ID = 1
-	event.UserId = 1
+	//event.ID = 1
+	event.UserId = int(userIdfromToken) // setting the user ID from the token
 
 	err = event.Save()
 	if err != nil {
