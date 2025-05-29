@@ -1,0 +1,2 @@
+DELETE  http://localhost:8080/events/1/unregistrations
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByaW5jeTEyMzM0QGdtYWlsLmNvbSIsImV4cCI6MTc0ODUwNDc1MSwiaWQiOjR9.XCSnjSbuyAKq4O3L8Vxum24evUaLwgJMONlWkEXwGnM

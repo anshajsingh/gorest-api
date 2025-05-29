@@ -20,6 +20,7 @@ func InitDB() (*sql.DB, error) {
 
 	createTableSQL()
 	createUsersSQL()
+	createRegistrationsTable()
 
 	return Db, nil
 }
@@ -50,5 +51,19 @@ func createUsersSQL() {
 
 	if _, err := Db.Exec(createUsersSQL); err != nil {
 		panic("Couldn't create users table: " + err.Error())
+	}
+}
+
+func createRegistrationsTable() {
+	createRegistrationsSQL := `CREATE TABLE IF NOT EXISTS registrations (
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		event_id INTEGER NOT NULL,
+		user_id INTEGER NOT NULL,
+		FOREIGN KEY (event_id) REFERENCES events(id),
+		FOREIGN KEY (user_id) REFERENCES users(id)
+	);`
+
+	if _, err := Db.Exec(createRegistrationsSQL); err != nil {
+		panic("Couldn't create registrations table: " + err.Error())
 	}
 }
